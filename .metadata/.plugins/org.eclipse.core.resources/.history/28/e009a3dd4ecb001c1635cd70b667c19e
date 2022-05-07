@@ -1,0 +1,15 @@
+package kr.hs.dgsw.java.dep1.d0504;
+
+public class WriterTester {
+	
+	public static void main(String[] args) {
+		String value = "예외가 없는 법칙은 없다.";
+		
+		Writer simpleWriter = new SimpleWriter();
+		simpleWriter.write(null);
+		
+		Writer fileWriter = new FileWriter("C:\\may.txt");
+		fileWriter.write(value);
+	}
+
+}

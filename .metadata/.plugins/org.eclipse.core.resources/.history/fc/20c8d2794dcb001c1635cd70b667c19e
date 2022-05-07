@@ -1,0 +1,12 @@
+package kr.hs.dgsw.java.dep1.d0504;
+
+public class WriterTester {
+	
+	public static void main(String[] args) {
+		String value = "";
+		
+		Writer simpleWriter = new SimpleWriter();
+		simpleWriter.write(null);
+	}
+
+}
