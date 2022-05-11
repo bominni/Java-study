@@ -1,0 +1,13 @@
+package kr.hs.dgsw.java.detp1.d0511;
+
+import java.io.File;
+
+public class FileStudy {
+	
+	public void studyFileData() {
+		
+		File file = new File("C:/Users/DGSW/JAVA STUDY/sample.txt");
+		
+	}
+
+}

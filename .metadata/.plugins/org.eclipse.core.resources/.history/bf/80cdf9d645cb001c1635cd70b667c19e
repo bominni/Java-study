@@ -1,9 +1,0 @@
-package kr.hs.dgsw.java.dep1.d0504;
-
-public class Printer {
-	
-	public void print();
-	
-	public void print(String value);
-
-}
