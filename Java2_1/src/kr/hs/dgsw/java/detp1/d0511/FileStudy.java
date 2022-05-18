@@ -112,22 +112,18 @@ public class FileStudy {
 		
 	}
 	
+	/* 파일 안에 있는 폴더 다 보기 */
 	public void studyList() {
 		File dir = new File("C:/");
 		
 		String[] list = dir.list();
 		File[] listFiles = dir.listFiles();
 		
-		/* for(String item : list) {
+		for(String item : list) {
 			System.out.println(item);
-		} */
-		
-		for(File file : listFiles) {
-			System.out.println(file.getName());
+		}
 		
 	}
-	
-	
 	
 	public Date makeDate(long unixTime) {
 		return new Date(unixTime);

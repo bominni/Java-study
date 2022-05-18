@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="kr.hs.dgsw.java.dept21.DogTester"/>
     <fullyQualifiedTypeName name="kr.hs.dgsw.java.dept21.Dog"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="kr.hs.dgsw.java.dept1.d0427.Cat"/>
     <fullyQualifiedTypeName name="java.lang.LinkageError"/>
     <fullyQualifiedTypeName name="java.util.List"/>
@@ -11,10 +10,17 @@
     <fullyQualifiedTypeName name="java.util.Stack"/>
     <fullyQualifiedTypeName name="java.io.InputStream"/>
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
-    <fullyQualifiedTypeName name="java.io.OutputStream"/>
-    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
     <fullyQualifiedTypeName name="java.security.interfaces.ECPublicKey"/>
+    <fullyQualifiedTypeName name="java.nio.file.attribute.FileTime"/>
+    <fullyQualifiedTypeName name="kr.hs.dgsw.java.detp1.d0511.homework.SimpleCommander"/>
+    <fullyQualifiedTypeName name="java.nio.file.attribute.BasicFileAttributes"/>
+    <fullyQualifiedTypeName name="java.nio.file.Files"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
     <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.io.OutputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
 </qualifiedTypeNameHistroy>
