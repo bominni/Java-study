@@ -23,4 +23,5 @@
     <fullyQualifiedTypeName name="java.io.OutputStream"/>
     <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="kr.hs.dgsw.java.dept1.d0525.Doer"/>
 </qualifiedTypeNameHistroy>
