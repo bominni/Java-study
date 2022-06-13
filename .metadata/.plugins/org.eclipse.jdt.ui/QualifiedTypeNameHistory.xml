@@ -4,9 +4,7 @@
     <fullyQualifiedTypeName name="kr.hs.dgsw.java.dept21.Dog"/>
     <fullyQualifiedTypeName name="kr.hs.dgsw.java.dept1.d0427.Cat"/>
     <fullyQualifiedTypeName name="java.lang.LinkageError"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.LinkedList"/>
     <fullyQualifiedTypeName name="java.util.Stack"/>
     <fullyQualifiedTypeName name="java.io.InputStream"/>
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
@@ -24,4 +22,11 @@
     <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="kr.hs.dgsw.java.dept1.d0525.Doer"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="kr.hs.dgsw.java.dept1.d0608.DepositThread"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.util.Queue"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
 </qualifiedTypeNameHistroy>
