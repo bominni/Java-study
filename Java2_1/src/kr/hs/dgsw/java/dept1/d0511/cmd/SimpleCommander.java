@@ -1,4 +1,4 @@
-package kr.hs.dgsw.java.dept1.d0511.homework;
+package kr.hs.dgsw.java.dept1.d0511.cmd;
 
 import java.io.File;
 import java.util.Scanner;
