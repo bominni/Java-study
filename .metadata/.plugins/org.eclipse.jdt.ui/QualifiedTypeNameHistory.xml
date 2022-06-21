@@ -43,4 +43,9 @@
     <fullyQualifiedTypeName name="java.io.FileReader"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="kr.hs.dgsw.java.dept1.d0621.phonebook.Registration"/>
+    <fullyQualifiedTypeName name="javax.crypto.SealedObject"/>
+    <fullyQualifiedTypeName name="kr.hs.dgsw.java.dept1.d0621.phonebook.SearchName"/>
+    <fullyQualifiedTypeName name="kr.hs.dgsw.java.dept1.d0621.phonebook.SearchPhone"/>
+    <fullyQualifiedTypeName name="kr.hs.dgsw.java.dept1.d0621.phonebook.Delete"/>
 </qualifiedTypeNameHistroy>

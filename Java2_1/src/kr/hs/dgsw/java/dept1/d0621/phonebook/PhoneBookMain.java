@@ -7,171 +7,72 @@ import java.util.List;
 import java.util.Scanner;
 
 public class PhoneBookMain {
-	static final String rootPath = System.getProperty("user.dir") + "\\test\\";
-	static final String address = rootPath + "DBmanager.txt";
+	static final String rootPath = System.getProperty("user.dir") + "\\test\\"; // 지금 내가 사용하고 있는 폴더 안에있는 test폴터
+	static final String address = rootPath + "DBmanager.txt"; // DBmanager.txt안에 저장
 	private static String searchstr;
 	private static String searchstr2;
 	
 	public static void main(String[] args) {
-		List<NumberInfo> number = new ArrayList<>();
-		run(number);
+		List<NumberInfo> number = new ArrayList<>(); // number이라는 리스트를 만든다.
+		run(number); // run에 number을 보낸다.
 	}
 	
 	private static void run(List<NumberInfo> number) {
-		boolean answer = true;
-		int num = 0;
+		boolean answer = true; // answer을 처음엔 true로 둔다.
+		int num = 0; // num을 0으로 초기화 시킨다.
 		System.out.println("----------------------------------------------------------------------");
 		System.out.println("                             전화번호부 프로그램                             ");
 		System.out.println("----------------------------------------------------------------------");
 		
-		while(answer) {
+		while(answer) { // answer가 true이면
 			Scanner sc = new Scanner(System.in);
 			System.out.println("1. 목록보기 | 2. 등록하기 | 3. 이름으로 검색하기 | 4. 전화번호로 검색하기 | 5. 삭제하기");
 			System.out.printf("실행시킬 메뉴 선택 - ");
-			num = sc.nextInt();
+			num = sc.nextInt(); // 숫자를 입력한다. 1이면 목록 2면 등록 3이면 이름으로 검색 4면 전화번호로 검색 5는 삭제
 			
-			switch(num) {
-			case 1:
+			switch(num) { // num을 넘겨준다.
+			case 1: // num이 1이면
 				System.out.println();
 				System.out.println("목록보기를 실행하겠습니다.");
-				showInfo(number);
+				showInfo(number); // showInfo에 number을 넘긴다.
 				break;
-			case 2:
+			case 2: // num이 2이면
 				System.out.println();
 				System.out.println("등록하기를 실행하겠습니다.");
-				registration(sc, number);
+				Registration.registration(sc, number); // registration에 sc랑 number을 넘긴다.
 				break;
-			case 3:
+			case 3: // num이 3이면
 				System.out.println();
 				System.out.println("검색하기를 실행하겠습니다.");
 				System.out.printf("이름의 일부분을 입력하세요 : ");
-				searchstr = sc.next();
-				searchname(sc, number, searchstr);
+				searchstr = sc.next(); // searchstr을 스캔
+				SearchName.searchname(sc, number, searchstr); // searchname에 sc랑 number랑 위에서 받은 searchstr을 넘긴다.
 				break;
-			case 4:
+			case 4: // num이 4이면
 				System.out.println();
 				System.out.println("검색하기를 실행하겠습니다.");
 				System.out.printf("전호번호의 일부분을 입력하세요 : ");
-				searchstr2 = sc.next();
-				searchphone(sc, number, searchstr2);
+				searchstr2 = sc.next(); // searchstr2를 스캔
+				SearchPhone.searchphone(sc, number, searchstr2); // searchphone에 sc랑 number랑 위에서 받은 searchstr2를 넘긴다.
 				break;
-			case 5:
+			case 5: // num이 5이면
 				System.out.println("삭제하기를 실행하겠습니다.");
 				System.out.printf("삭제할 사람을 입력하세요 : ");
-				delete(sc, number);
+				Delete.delete(sc, number); // delete에 sc랑 number을 넘긴다.
 				break;
 			}
-		}
-	}
-
-	private static void searchname(Scanner sc, List<NumberInfo> number, String str) { // 이름으로 검색하기
-		List<NumberInfo> temp = new ArrayList<>();
-		for(int i=0; i<number.size(); i++) {
-			NumberInfo serchnumber = (NumberInfo) number.get(i);
-			if(serchnumber.getName().contains(str)) {
-				temp.add(serchnumber);
-			}
-		}
-		if(temp.size() == 0) {
-			System.out.println("존재하지 않습니다.");
-		}
-		else if(temp.size() == 1) {
-			System.out.println(temp.toString());
-		}
-		else {
-			Collections.sort(temp, new Comparator<NumberInfo>() {
-    			@Override
-    		    public int compare(NumberInfo num1, NumberInfo num2) {
-    		        return num1.getName().compareTo(num2.getName());
-    		    }
-    		});
-			for(int i=0; i<temp.size(); i++) {
-				System.out.println(i+1 + ". " + temp.get(i).getName() + " " + temp.get(i).getPhone());
-			}
-		}
-	}
-	
-	private static void searchphone(Scanner sc, List<NumberInfo> number, String str) { // 전화번호로 검색하기
-		List<NumberInfo> temp = new ArrayList<>();
-		for(int i=0; i<number.size(); i++) {
-			NumberInfo serchnumber = (NumberInfo) number.get(i);
-			if(serchnumber.getPhone().contains(str)) {
-				temp.add(serchnumber);
-			}
-		}
-		if(temp.size() == 0) {
-			System.out.println("존재하지 않습니다.");
-		}
-		else if(temp.size() == 1) {
-			System.out.println(temp.toString());
-		}
-		else {
-			Collections.sort(temp, new Comparator<NumberInfo>() {
-    			@Override
-    		    public int compare(NumberInfo num1, NumberInfo num2) {
-    		        return num1.getName().compareTo(num2.getName());
-    		    }
-    		});
-			for(int i=0; i<temp.size(); i++) {
-				System.out.println(i+1 + ". " + temp.get(i).getName() + " " + temp.get(i).getPhone());
-			}
-		}
-	}
-	
-	private static void delete(Scanner sc, List<NumberInfo> number) { // 삭제하기
-		String delete = sc.next();
-		List<NumberInfo> tempList = new ArrayList<NumberInfo>(); 
-        for(int i=0; i < number.size(); i++) {
-            if(number.get(i).getName().equals(delete)) {
-            		tempList.add(number.get(i));
-            }
-        }
-		if(tempList.size() == 0) {
-			System.out.println("존재하지 않습니다.");
-			return;
-		}
-		else if(tempList.size() == 1) {
-			number.remove(tempList.get(0));
-		}
-		else {
-			for(int i=0;i < tempList.size(); i++) {
-				System.out.println(i+1 + ". " + tempList.get(i).getName() + " " + tempList.get(i).getPhone());
-			}
-			
-			System.out.printf("중복된 이름이 있습니다. 전화번호를 입력하세요 : ");
-			String Phonedelete = sc.next();
-			for(int i=0; i < tempList.size(); i++) {
-	            if(tempList.get(i).getPhone().equals(Phonedelete)) {
-	            	number.remove(tempList.get(i));
-	        		System.out.println("삭제되었습니다.");
-	            	return;
-	            }
-			}
-			System.out.println("전화번호가 존재하지 않습니다.");
 		}
 	}
 	
 	private static void showInfo(List<NumberInfo> number) { // 목록보기
-		Collections.sort(number, new Comparator<NumberInfo>() {
+		Collections.sort(number, new Comparator<NumberInfo>() { // temp를 sort를 활용해 정렬
 			@Override
 		    public int compare(NumberInfo num1, NumberInfo num2) {
-		        return num1.getName().compareTo(num2.getName());
+		        return num1.getName().compareTo(num2.getName()); // num1과 num2를 비교해서 return 해준다.
 		    }
 		});
 		for(int i=0; i<number.size(); i++) {
 			System.out.println(i+1 + ". " + number.get(i).getName() + " " + number.get(i).getPhone());			
 		}
-	}
-	
-	private static void registration(Scanner sc, List<NumberInfo> number) { // 등록하기
-		String name;
-		String phone;
-		System.out.printf("이름 : ");
-		name = sc.next();
-		System.out.printf("전화번호 : ");
-		phone = sc.next();
-		number.add(new NumberInfo(name, phone));
-		System.out.println();
-		System.out.println("등록되었습니다.");
 	}
 }
