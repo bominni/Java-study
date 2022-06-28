@@ -14,12 +14,10 @@
     <fullyQualifiedTypeName name="java.nio.file.Files"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
-    <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="java.io.OutputStream"/>
     <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
     <fullyQualifiedTypeName name="kr.hs.dgsw.java.dept1.d0525.Doer"/>
     <fullyQualifiedTypeName name="kr.hs.dgsw.java.dept1.d0608.DepositThread"/>
-    <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.Queue"/>
@@ -32,15 +30,8 @@
     <fullyQualifiedTypeName name="kr.hs.dgsw.java.dept1.d0613.phonebook.Registration"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="kr.hs.dgsw.java.dept1.d0621.test.Contactmanager"/>
-    <fullyQualifiedTypeName name="java.io.Writer"/>
-    <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
-    <fullyQualifiedTypeName name="java.io.FileWriter"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="java.io.Reader"/>
-    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
-    <fullyQualifiedTypeName name="java.io.FileReader"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="kr.hs.dgsw.java.dept1.d0621.phonebook.Registration"/>
@@ -48,4 +39,16 @@
     <fullyQualifiedTypeName name="kr.hs.dgsw.java.dept1.d0621.phonebook.SearchName"/>
     <fullyQualifiedTypeName name="kr.hs.dgsw.java.dept1.d0621.phonebook.SearchPhone"/>
     <fullyQualifiedTypeName name="kr.hs.dgsw.java.dept1.d0621.phonebook.Delete"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.io.Writer"/>
+    <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.io.Reader"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="kr.hs.dgsw.java.dept1.d0627.cmd2.CommandRm"/>
+    <fullyQualifiedTypeName name="kr.hs.dgsw.java.dept1.d0627.binarysearch.Searcher"/>
+    <fullyQualifiedTypeName name="kr.hs.dgsw.java.dept1.d0627.binarysearch.BinarySearch"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

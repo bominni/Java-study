@@ -19,7 +19,8 @@ public class Delete {
 			return;
 		}
 		else if(tempList.size() == 1) { // 한개라면
-			number.remove(tempList.get(0)); // 출력
+			number.remove(tempList.get(0)); // 삭제
+			System.out.println("삭제되었습니다.");
 		}
 		else { // 아니면
 			for(int i=0;i < tempList.size(); i++) { // tempList의 size만큼 for문을 돈다.

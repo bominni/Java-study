@@ -1,5 +1,11 @@
 package kr.hs.dgsw.java.dept1.d0621.phonebook;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.Reader;
+import java.io.Writer;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -14,6 +20,7 @@ public class PhoneBookMain {
 	
 	public static void main(String[] args) {
 		List<NumberInfo> number = new ArrayList<>(); // number이라는 리스트를 만든다.
+		readTxt(number);
 		run(number); // run에 number을 보낸다.
 	}
 	
@@ -64,7 +71,7 @@ public class PhoneBookMain {
 		}
 	}
 	
-	private static void showInfo(List<NumberInfo> number) { // 목록보기
+	private static void showInfo(List<NumberInfo> number) { // 목록보기S
 		Collections.sort(number, new Comparator<NumberInfo>() { // temp를 sort를 활용해 정렬
 			@Override
 		    public int compare(NumberInfo num1, NumberInfo num2) {
@@ -73,6 +80,55 @@ public class PhoneBookMain {
 		});
 		for(int i=0; i<number.size(); i++) {
 			System.out.println(i+1 + ". " + number.get(i).getName() + " " + number.get(i).getPhone());			
+		}
+	}
+	
+	private static List<NumberInfo> readTxt(List<NumberInfo> number) {
+		Reader fr = null;
+		BufferedReader br = null;
+		try {
+			fr =new FileReader(address);
+			br = new BufferedReader(fr);
+			String line = "";
+			String[] words = new String[2];
+			while((line = br.readLine()) != null) {
+				words = line.split(", ");
+				number.add(new NumberInfo(words[0], words[1]));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				br.close();
+			} catch(Exception e) {
+				e.printStackTrace();
+			}
+		}
+		return number;
+	}
+	
+	private static void wirteTxt(List<NumberInfo> number) {
+		Writer fw = null;
+		BufferedWriter bw = null;
+		
+		try {
+			fw = new FileWriter(address);
+			bw = new BufferedWriter(fw);
+			
+			for(int i=0; i<number.size(); i++) {
+				NumberInfo writenumber = (NumberInfo) number.get(i);
+				bw.write(writenumber.getName() + ", ");
+				bw.write(writenumber.getPhone() + ", ");
+				bw.write("\r\n");
+			}
+		} catch(Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				bw.close();
+			} catch(Exception e) {
+				e.printStackTrace();
+			}
 		}
 	}
 }
