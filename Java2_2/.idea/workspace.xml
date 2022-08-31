@@ -5,43 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a88e5f3-d366-466d-8a90-af514d886f96" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ex0824/ArraysStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex0824/ArraysTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex0824/AverageCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex0824/AverageCalculatorJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex0824/Job.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex0824/MaximumFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex0824/MaximumFinderJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex0824/Sorting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex0824/SortingJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex0831/Bower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex0831/EnglishHello.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex0831/HelloIF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex0831/KoreanHello.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ex0831/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java2_1/test/DBmanager.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex0824/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex0824/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex0824/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex0824/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex0824/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex0824/ex0824.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex0824/out/production/ex0824/Practice_problem/Counter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex0824/out/production/ex0824/Practice_problem/CounterDoer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex0824/out/production/ex0824/Practice_problem/Doer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex0824/out/production/ex0824/Practice_problem/MainJob.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex0824/out/production/ex0824/Practice_problem/NameJob.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex0824/out/production/ex0824/Practice_problem/SayHello.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex0824/out/production/ex0824/Practice_problem/SayHelloDoer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex0824/src/Practice_problem/Counter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex0824/src/Practice_problem/CounterDoer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex0824/src/Practice_problem/Doer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex0824/src/Practice_problem/MainJob.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex0824/src/Practice_problem/NameJob.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex0824/src/Practice_problem/SayHello.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex0824/src/Practice_problem/SayHelloDoer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex0824/AverageCalculatorJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex0824/AverageCalculatorJob.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -98,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661910951872</updated>
-      <workItem from="1661910953564" duration="8936000" />
+      <workItem from="1661910953564" duration="9281000" />
     </task>
     <servers />
   </component>

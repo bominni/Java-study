@@ -1,7 +1,6 @@
 package ex0824;
 
-public class AverageCalculatorJob {
-
+public class AverageCalculatorJob implements  Job {
     @Override
     public void doJob(int[] array) {
         int total = 0;
@@ -17,6 +16,6 @@ public class AverageCalculatorJob {
 
     public static void main(String[] args) {
         ArraysStrategy strategy = new ArraysStrategy();
-        strategy.execute((Job) new AverageCalculatorJob());
+        strategy.execute(new AverageCalculatorJob());
     }
 }
