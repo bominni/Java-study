@@ -4,18 +4,73 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdffc110-e18c-4c29-a77d-4a6d8b995dd4" name="Changes" comment="">
+    <list default="true" id="8a88e5f3-d366-466d-8a90-af514d886f96" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ex0824/ArraysStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ex0824/ArraysTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ex0824/AverageCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ex0824/AverageCalculatorJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ex0824/Job.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ex0824/MaximumFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ex0824/MaximumFinderJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ex0824/Sorting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ex0824/SortingJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ex0831/Bower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ex0831/EnglishHello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ex0831/HelloIF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ex0831/KoreanHello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ex0831/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Java2_1/test/DBmanager.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex0824/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex0824/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex0824/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex0824/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex0824/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex0824/ex0824.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex0824/out/production/ex0824/Practice_problem/Counter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex0824/out/production/ex0824/Practice_problem/CounterDoer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex0824/out/production/ex0824/Practice_problem/Doer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex0824/out/production/ex0824/Practice_problem/MainJob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex0824/out/production/ex0824/Practice_problem/NameJob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex0824/out/production/ex0824/Practice_problem/SayHello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex0824/out/production/ex0824/Practice_problem/SayHelloDoer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex0824/src/Practice_problem/Counter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex0824/src/Practice_problem/CounterDoer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex0824/src/Practice_problem/Doer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex0824/src/Practice_problem/MainJob.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex0824/src/Practice_problem/NameJob.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex0824/src/Practice_problem/SayHello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex0824/src/Practice_problem/SayHelloDoer.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="2DmbN4Rbn9lv6qZWRjLcEMOoUjr" />
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2E6LBXaRYbWAkOrhqn7VihZuuBy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -25,44 +80,40 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Web-study/ex0413" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager">
-    <configuration name="Tomcat 9.0.59" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.59" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment>
-        <artifact name="ex0824:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/ex0824_war_exploded" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings />
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="ex0824:war exploded" />
-        </option>
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="ex0824" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cdffc110-e18c-4c29-a77d-4a6d8b995dd4" name="Changes" comment="" />
-      <created>1661307166695</created>
+      <changelist id="8a88e5f3-d366-466d-8a90-af514d886f96" name="Changes" comment="" />
+      <created>1661910951872</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1661307166695</updated>
-      <workItem from="1661307170573" duration="478000" />
+      <updated>1661910951872</updated>
+      <workItem from="1661910953564" duration="8936000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

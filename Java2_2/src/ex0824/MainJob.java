@@ -1,4 +1,4 @@
-package Practice_problem;
+package ex0824;
 
 import java.util.Scanner;
 

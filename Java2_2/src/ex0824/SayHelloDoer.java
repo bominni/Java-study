@@ -1,4 +1,4 @@
-package Practice_problem;
+package ex0824;
 
 public class SayHelloDoer implements Doer {
 
