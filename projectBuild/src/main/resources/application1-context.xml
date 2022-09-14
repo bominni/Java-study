@@ -6,9 +6,14 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="hello" class="study.spring.projectBuild.Hello">
+        <property name="person" ref="mary"></property>
     </bean>
 
-    <bean id="person" class="study.spring.projectBuild.Person">
+    <bean id="smith" class="study.spring.projectBuild.Person">
+        <property name="name" value="Mr.Smith"></property>
     </bean>
 
+    <bean id="mary" class="study.spring.projectBuild.Person">
+        <property name="name" value="Ms.Mary"></property>
+    </bean>
 </beans>

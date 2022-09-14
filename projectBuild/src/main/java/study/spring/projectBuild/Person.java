@@ -1,9 +1,13 @@
 package study.spring.projectBuild;
 
 public class Person {
-    private String name = "Mr.Smith";
+    private String name;
 
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
