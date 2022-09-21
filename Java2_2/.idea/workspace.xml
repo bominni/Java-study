@@ -5,11 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a88e5f3-d366-466d-8a90-af514d886f96" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../projectBuild/src/main/java/study/spring/projectBuild/Application1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectBuild/src/main/java/study/spring/projectBuild/Hello.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projectBuild/src/main/resources/application1-context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectBuild/src/main/java/study/spring/projectBuild/Application2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectBuild/src/main/java/study/spring/projectBuild/Application3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectBuild/src/main/java/study/spring/projectBuild/CalculatorApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectBuild/src/main/java/study/spring/projectBuild/Configuration1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectBuild/src/main/java/study/spring/projectBuild/Configuration3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectBuild/src/main/java/study/spring/projectBuild/ConfigurationCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectBuild/src/main/java/study/spring/projectBuild/calculator/Adder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectBuild/src/main/java/study/spring/projectBuild/calculator/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectBuild/src/main/java/study/spring/projectBuild/calculator/Machine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectBuild/src/main/java/study/spring/projectBuild/scan/Hello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectBuild/src/main/java/study/spring/projectBuild/scan/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projectBuild/src/main/resources/application-calculator-context.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projectBuild/src/main/java/study/spring/projectBuild/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/../projectBuild/src/main/java/study/spring/projectBuild/Hello.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../projectBuild/src/main/java/study/spring/projectBuild/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../projectBuild/src/main/java/study/spring/projectBuild/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projectBuild/src/main/resources/application1-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../projectBuild/src/main/resources/application1-context.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +80,7 @@
       <updated>1661910951872</updated>
       <workItem from="1661910953564" duration="11188000" />
       <workItem from="1662344093301" duration="2284000" />
-      <workItem from="1663119801153" duration="1618000" />
+      <workItem from="1663119801153" duration="1824000" />
     </task>
     <servers />
   </component>
