@@ -15,13 +15,16 @@ public class ApiController {
 
     @GetMapping("/now")
     public String now() {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd HH:mm:ss");
+        SimpleDateFormat dateFormat =
+                new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String now = dateFormat.format(new Date());
+
         return now;
     }
 
     @GetMapping("/person")
-    public Person person(@RequestParam("code") String name, @RequestParam("age") int age) {
+    public Person person(@RequestParam("code") String name,
+                         @RequestParam("age") int age) {
         Person person = new Person();
         person.setName(name);
         //person.setAge((int)System.currentTimeMillis() % 90 + 10);
@@ -36,7 +39,9 @@ public class ApiController {
     }
 
     @GetMapping("/add")
-    public String add(@RequestParam(value = "value1", defaultValue = "10") int value1, @RequestParam(value = "value2", defaultValue = "15") int value2) {
+    public String add(@RequestParam(value = "value1", defaultValue = "10") int value1,
+                      @RequestParam(value = "value2", defaultValue = "15") int value2) {
         return String.format("%d + %d = %d", value1, value2, value1 + value2);
     }
+
 }
