@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Note</title>
+
+    <link href="/css/note.css?1" rel="stylesheet">
+
+    <script>
+
+        const deleteSong = function() {
+            if (confirm("정말 삭제하시겠습니까?")) {
+                const idx = document.querySelector("[name='idx']").value;
+                location.href = "../delete.do/" + idx;
+            }
+        };
+
+    </script>
+
+</head>
+<body>
+<h1>글 정보</h1>
+
+<div class="imformation_note">
+    <input type="hidden" name="idx" th:value="${note.idx}">
+    <div>
+        <label>제목</label>
+        <span th:text="${note.title}"></span>
+    </div>
+    <div>
+        <label>내용</label>
+        <span th:text="${note.content}"></span>
+    </div>
+    <div>
+        <label>글쓴이</label>
+        <span th:text="${note.writer}"></span>
+    </div>
+    <div>
+        <label></label>
+        <a href="../list"><button>목록</button></a>
+        <a th:href="@{/note/update/{id} (id = ${note.idx})}"><button>수정</button></a>
+        <a href="javascript:deleteNote();"><button>삭제</button></a>
+    </div>
+</div>
+
+</body>
+</html>
