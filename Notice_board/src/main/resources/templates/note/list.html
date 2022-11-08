@@ -4,32 +4,37 @@
     <meta charset="UTF-8">
     <title>Note</title>
 
-    <link href="/css/note.css?1" rel="stylesheet">
+    <link href="/css/list.css?1" rel="stylesheet">
 
 </head>
-<body>
-<h1>글 목록</h1>
+<body class="list">
+<h1 class="text_list">글 목록</h1>
 
-<div>
-    <a href="add">추가</a>
+<div class="main_list">
+
+    <div>
+        <button class="add_list" onclick="location.href='write' ">추가</button>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>제목</th>
+            <th>글쓴이</th>
+            <th>글 쓴 시각</th>
+            <th>읽은 횟수</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="item : ${list}">
+            <td><a th:href="@{view/{id}(id = ${item.idx})}" th:text="${item.title}" class="text_title"></a></td>
+            <td th:text="${item.writer}"></td>
+            <td th:text="${item.time}"></td>
+            <td th:text="${item.count}"></td>
+        </tr>
+        </tbody>
+    </table>
 </div>
-
-<table class="list">
-    <thead>
-    <tr>
-        <th>제목</th>
-        <th>내용</th>
-        <th>글쓴이</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr th:each="item : ${list}">
-        <td><a th:href="@{view/{id}(id = ${item.idx})}" th:text="${item.title}"></a></td>
-        <td th:text="${item.content}"></td>
-        <td th:text="${item.writer}"></td>
-    </tr>
-    </tbody>
-</table>
 
 </body>
 </html>

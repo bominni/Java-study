@@ -20,11 +20,13 @@ public class NoteServiceImpl implements NoteService {
     }
 
     @Override
-    public Note addNote(Note note) {
+    public Note writeNote(Note note) {
         NoteEntity noteEntity = new NoteEntity();
         noteEntity.setTitle(note.getTitle());
         noteEntity.setContent(note.getContent());
         noteEntity.setWriter(note.getWriter());
+        noteEntity.setTime(note.getTime());
+        noteEntity.setCount(note.getCount());
 
         noteRepository.save(noteEntity);
 
@@ -37,8 +39,9 @@ public class NoteServiceImpl implements NoteService {
 
         List<Note> result = new ArrayList<>();
         for (NoteEntity item : list) {
-            Note note = new Note(item.getTitle(),
-                    item.getContent(), item.getWriter());
+            Note note = new Note(item.getTitle(), item.getContent(), item.getWriter(), item.getTime(), item.getCount()
+            );
+
             note.setIdx(item.getIdx());
 
             result.add(note);
@@ -54,7 +57,7 @@ public class NoteServiceImpl implements NoteService {
         if(optional.isPresent()) {
             NoteEntity entity = optional.get();
             Note note = new Note(entity.getTitle(),
-                    entity.getContent(), entity.getWriter());
+                    entity.getContent(), entity.getWriter(), entity.getTime(), entity.getCount());
 
             note.setIdx(entity.getIdx());
 
@@ -67,7 +70,7 @@ public class NoteServiceImpl implements NoteService {
     @Override
     public void update(Note note) {
         NoteEntity entity = new NoteEntity(note.getIdx(), note.getTitle(),
-                note.getContent(), note.getWriter());
+                note.getContent(), note.getWriter(), note.getTime(), note.getCount());
 
         noteRepository.save(entity);
     }

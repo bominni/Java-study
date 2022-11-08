@@ -5,7 +5,7 @@ import Spring.study.Notice_board.domain.Note;
 import java.util.List;
 
 public interface NoteService {
-    public Note addNote(Note note);
+    public Note writeNote(Note note);
 
     public List<Note> getList();
 

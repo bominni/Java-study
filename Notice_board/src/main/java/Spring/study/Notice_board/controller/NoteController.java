@@ -4,16 +4,14 @@ import Spring.study.Notice_board.domain.Note;
 import Spring.study.Notice_board.service.NoteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Controller
-@RequestMapping("/note")
+@RequestMapping("/")
 public class NoteController {
 
     private NoteService noteService;
@@ -23,17 +21,21 @@ public class NoteController {
         this.noteService = noteService;
     }
 
-    @RequestMapping("add")
-    public String add() {
-        return "note/add";
+    @RequestMapping("/write")
+    public String write() {
+        return "note/write";
     }
 
-    public String addSave(
+    @PostMapping("/write-save.do")
+    public String writeSave(
             @RequestParam("title") String title
             , @RequestParam("content") String content
             , @RequestParam("writer") String writer) {
-        Note note = new Note(title, content, writer);
-        noteService.addNote(note);
+
+        LocalDateTime time = LocalDateTime.now();
+        Long count = Long.valueOf(0);
+        Note note = new Note(title, content, writer, time, count);
+        noteService.writeNote(note);
 
         return "redirect:list";
     }
@@ -76,18 +78,21 @@ public class NoteController {
             , @RequestParam("title") String title
             , @RequestParam("content") String content
             , @RequestParam("writer") String writer) {
-        Note note = new Note(title, content, writer);
+
+        LocalDateTime time = LocalDateTime.now();
+        Long count = Long.valueOf(0);
+        Note note = new Note(title, content, writer, time, count);
         note.setIdx(idx);
 
         noteService.update(note);
 
-        return "redirect:view/" + idx;
+        return "redirect:list";
     }
 
     @RequestMapping("/delete.do/{idx}")
     public String delete(@PathVariable("idx") Long idx) {
         noteService.delete(idx);
 
-        return "redireact:../list";
+        return "redirect:../list";
     }
 }

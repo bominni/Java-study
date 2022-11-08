@@ -1,6 +1,7 @@
 package Spring.study.Notice_board.entity;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "note")
@@ -18,6 +19,10 @@ public class NoteEntity {
     @Column(length = 50)
     private String writer;
 
+    private LocalDateTime time;
+
+    private Long count;
+
     public NoteEntity() {
 
     }
@@ -27,6 +32,22 @@ public class NoteEntity {
         this.title = title;
         this.content = content;
         this.writer = writer;
+    }
+
+    public NoteEntity(Long idx, String title, String content, String writer, LocalDateTime time, Long count) {
+        this.idx = idx;
+        this.title = title;
+        this.content = content;
+        this.writer = writer;
+        this.time = time;
+        this.count = count;
+    }
+    public LocalDateTime getTime() {
+        return time;
+    }
+
+    public void setTime(LocalDateTime time) {
+        this.time = time;
     }
 
     public Long getIdx() {
@@ -59,5 +80,13 @@ public class NoteEntity {
 
     public void setWriter(String writer) {
         this.writer = writer;
+    }
+
+    public Long getCount() {
+        return count;
+    }
+
+    public void setCount(Long count) {
+        this.count = count;
     }
 }

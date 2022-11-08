@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Note</title>
+
+    <link href="/css/write.css?1" rel="stylesheet">
+
+</head>
+<body class="write">
+<h1 class="text_write">글 쓰기</h1>
+
+<div class="create_note">
+    <form action="write-save.do" method="post">
+        <div>
+            <label class="text_label">제목</label>
+            <input type="text" name="title" class="input_title" maxlength = "100">
+        </div>
+        <div>
+            <label class="text_label">내용</label>
+            <textarea type="text" name="content" class="input_content" maxlength = "1000"></textarea>
+        </div>
+        <div>
+            <label class="text_label">글쓴이</label>
+            <input type="text" name="writer" class="input_write" maxlength = "50">
+        </div>
+        <div>
+            <label></label>
+            <button class="add_write">저장</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
