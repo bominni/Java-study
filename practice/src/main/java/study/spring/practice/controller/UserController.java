@@ -27,15 +27,19 @@ public class UserController {
 
     @PostMapping("/register")
     public String registerSave(
-            @RequestParam(value = "email") String email,
-            @RequestParam(value = "password") String password,
-            @RequestParam(value = "name") String name,
-            @RequestParam(value = "grade") int grade) {
+            @RequestParam(value = "email") String email
+            , @RequestParam(value = "password") String password
+            , @RequestParam(value = "name") String name
+            , @RequestParam(value = "grade") int grade) {
 
         User user = new User(email, password, name, grade);
-
-        UserService.register(user);
+        userService.register(user);
 
         return "redirect:/";
+    }
+
+    @GetMapping("/my-login")
+    public String login() {
+        return "user/login";
     }
 }

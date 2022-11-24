@@ -9,4 +9,5 @@ public interface UserService {
     public User read(String email);
 
     public User register(User user);
+
 }

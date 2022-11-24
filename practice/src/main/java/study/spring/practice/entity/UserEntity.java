@@ -35,7 +35,7 @@ public class UserEntity {
         UserEntity entity = new UserEntity();
 
         entity.setUserIdx(user.getUserIdx());
-        entity.setPassword((user.getPassword()));
+        entity.setPassword(user.getPassword());
         entity.setEmail(user.getEmail());
         entity.setName(user.getName());
         entity.setGrade(user.getGrade());

@@ -1,9 +1,10 @@
 package study.spring.practice.domain;
 
+import study.spring.practice.entity.UserEntity;
+
 import java.util.Date;
 
 public class User {
-
     private Long userIdx;
 
     private String email;
@@ -104,4 +105,21 @@ public class User {
     public void setWithrawTime(Date withrawTime) {
         this.withrawTime = withrawTime;
     }
+
+    public static User build(UserEntity entity) {
+        User user = new User();
+
+        user.setUserIdx(entity.getUserIdx());
+        user.setEmail(entity.getEmail());
+        user.setPassword(entity.getPassword());
+        user.setName(entity.getName());
+        user.setGrade(entity.getGrade());
+        user.setRegisterTime(entity.getRegisterTime());
+        user.setLastLoginTime(entity.getLastLoginTime());
+        user.setWithdrawed(entity.isWithdrawed());
+        user.setWithrawTime(entity.getWithrawTime());
+
+        return user;
+    }
+
 }
