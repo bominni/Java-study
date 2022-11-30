@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Note</title>
+
+    <link href="/css/write.css?1" rel="stylesheet">
+
+</head>
+<body class="write">
+<div class="navbar">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/user/register">회원가입</a></li>
+                <li sec:authorize="isAnonymous()"><a th:href="@{/user/my-login}">로그인</a></li>
+                <li sec:authorize="isAuthenticated()"><span><span sec:authentication="principal.user.name"></span>님 환영합니다.</span><a th:href="@{/user/my-logout}">로그아웃</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+<h1 class="text_write">글 쓰기</h1>
+
+<div class="create_note">
+    <form action="write-save.do" method="post">
+        <input type="hidden" name="writer" th:value="principal.user.name">
+        <div>
+            <label class="text_label">제목</label>
+            <input type="text" name="title" class="input_title" maxlength = "100">
+        </div>
+        <div>
+            <label class="text_label">내용</label>
+            <textarea type="text" name="content" class="input_content" maxlength = "1000"></textarea>
+        </div>
+        <div>
+            <label></label>
+            <button class="add_write">저장</button>
+        </div>
+    </form>
+</div>
+
+</body>
+
+<script>
+    function getName(url) {
+        $.ajax({
+            url:url,
+            async: true,
+            type: 'get',
+            data: "",
+            processData: false,
+            dataType: 'text',
+            contentType: 'application/json; charset=utf-8',
+            beforeSend: function (res) {
+                res = JSON.parse(res);
+                document.getElementById("writer").value = res.ID;
+            },
+            error: function (res, status) {
+                document.getElementById("writer").value = "error";
+            },
+            complete: function (res) {}
+        });
+    }
+
+    let tokenLocalStorage = "token";
+    let token = localStorage.getItem(tokenLocalStorage);
+    getName("http://localhost:8080/user/getname?token="+localStorage.getItem(tokenLocalStorage));
+
+</script>
+</html>

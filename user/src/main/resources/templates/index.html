@@ -4,20 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <title>스프링</title>
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
 </head>
 <body>
-
-<h1>스프링 모두</h1>
-
-<p>홈 페이지</p>
-<p><a href="/user/register">회원가입</a></p>
-<p sec:authorize="isAnonymous()">
-    <a th:href="@{/user/my-login}">로그인</a>
-</p>
-<p sec:authorize="isAuthenticated()">
-    <span><span sec:authentication="principal.user.name"></span>님 환영합니다.</span>
-    <a th:href="@{/user/my-logout}">로그아웃</a>
-</p>
-
+<div class="navbar">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/user/register">회원가입</a></li>
+                <li sec:authorize="isAnonymous()"><a th:href="@{/user/my-login}">로그인</a></li>
+                <li sec:authorize="isAuthenticated()"><span><span sec:authentication="principal.user.name"></span>님 환영합니다.</span><a th:href="@{/user/my-logout}">로그아웃</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
 </body>
 </html>

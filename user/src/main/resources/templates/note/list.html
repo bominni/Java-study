@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Note</title>
+
+    <link href="/css/list.css?1" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+
+</head>
+<body class="list">
+<div class="navbar">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/user/register">회원가입</a></li>
+                <li sec:authorize="isAnonymous()"><a th:href="@{/user/my-login}">로그인</a></li>
+                <li sec:authorize="isAuthenticated()"><span><span sec:authentication="principal.user.name"></span>님 환영합니다.</span><a th:href="@{/user/my-logout}">로그아웃</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+<h1 class="text_list">글 목록</h1>
+<script>
+    includeHTML();
+</script>
+
+
+<div class="main_list">
+
+    <div>
+        <button class="add_list" onclick="location.href='write' ">추가</button>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>제목</th>
+            <th>글쓴이</th>
+            <th>글 쓴 시각</th>
+            <th>읽은 횟수</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="item : ${list}">
+            <td><a th:href="@{view/{id}(id = ${item.idx})}" th:text="${item.title}" class="text_title"></a></td>
+            <td th:text="${item.idx}"></td>
+            <td th:text="${item.getTimeString()}"></td>
+            <td th:text="${item.count}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

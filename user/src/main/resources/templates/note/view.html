@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Note</title>
+
+    <link href="/css/view.css?1" rel="stylesheet">
+
+    <script>
+
+        const deleteNote = function() {
+            if (confirm("정말 삭제하시겠습니까?")) {
+                const idx = document.querySelector("[name='idx']").value;
+                location.href = "../delete.do/" + idx;
+            }
+        };
+
+    </script>
+
+</head>
+<body class="view">
+<div class="navbar">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/user/register">회원가입</a></li>
+                <li sec:authorize="isAnonymous()"><a th:href="@{/user/my-login}">로그인</a></li>
+                <li sec:authorize="isAuthenticated()"><span><span sec:authentication="principal.user.name"></span>님 환영합니다.</span><a th:href="@{/user/my-logout}">로그아웃</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+<h1 class="text_view">글 읽기</h1>
+
+<div class="imformation_note">
+    <input type="hidden" name="idx" th:value="${note.idx}">
+    <div>
+        <label class="text_label">제목</label>
+        <span th:text="${note.title}" class="input_title">
+    </div>
+    <div>
+        <label class="text_label">내용</label>
+        <span th:text="${note.content}" class="input_content"></span>
+    </div>
+    <div>
+        <label class="text_label">글쓴이</label>
+        <span th:text="${note.idx}" class="input_write"></span>
+    </div>
+    <div>
+        <label class="text_label">글 쓴 시각</label>
+        <span th:text="${note.getTimeString()}" class="input_time"></span>
+    </div>
+    <div>
+        <label class="text_label">읽은 횟수</label>
+        <span th:text="${note.count}" class="input_count"></span>
+    </div>
+    <div>
+        <label></label>
+        <a href="../list"><button class="button">목록</button></a>
+        <a th:href="@{/update/{id} (id = ${note.idx})}"><button class="button">수정</button></a>
+        <a href="javascript:deleteNote();"><button class="button">삭제</button></a>
+    </div>
+</div>
+
+</body>
+</html>

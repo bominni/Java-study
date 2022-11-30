@@ -34,6 +34,7 @@ public class MyAuthenticationSuccessHandler extends SimpleUrlAuthenticationSucce
 
         userRepository.updateLastLoginTime(email, new Date());
 
+        response.sendRedirect("/list");
         super.onAuthenticationSuccess(request, response, authentication);
     }
 }

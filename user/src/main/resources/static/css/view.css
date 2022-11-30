@@ -1,0 +1,79 @@
+.button {
+    background: #ff98a3;
+    color: white;
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    margin-top: 30px;
+}
+
+.text_view {
+    width: 800px;
+    background: #ff98a3;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.imformation_note {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-collapse: collapse;
+    flex-direction: column;
+}
+
+.text_label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.input_title {
+    display: inline-block;
+    width: 800px;
+    height: 30px;
+    font-size: 20px;
+    border: 1px solid #ff98a3;
+}
+
+.input_content {
+    display: inline-block;
+    width: 800px;
+    height: 500px;
+    font-size: 20px;
+    border: 1px solid #ff98a3;
+}
+
+.input_write {
+    display: inline-block;
+    width: 800px;
+    height: 30px;
+    font-size: 20px;
+    border: 1px solid #ff98a3;
+}
+
+.input_time {
+    display: inline-block;
+    width: 800px;
+    height: 30px;
+    font-size: 20px;
+    border: 1px solid #ff98a3;
+}
+
+.input_count {
+    display: inline-block;
+    width: 800px;
+    height: 30px;
+    font-size: 20px;
+    border: 1px solid #ff98a3;
+}
