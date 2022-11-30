@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>스프링</title>
+</head>
+<body>
+
+<h1>스프링 모두</h1>
+
+<p>홈 페이지</p>
+<p><a href="/user/register">회원가입</a></p>
+<p sec:authorize="isAnonymous()">
+    <a th:href="@{/user/my-login}">로그인</a>
+</p>
+<p sec:authorize="isAuthenticated()">
+    <span><span sec:authentication="principal.user.name"></span>님 환영합니다.</span>
+    <a th:href="@{/user/my-logout}">로그아웃</a>
+</p>
+
+</body>
+</html>

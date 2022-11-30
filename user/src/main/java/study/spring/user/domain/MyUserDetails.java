@@ -1,4 +1,5 @@
-package study.spring.practice.domain;
+package study.spring.user.domain;
+
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

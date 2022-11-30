@@ -1,11 +1,12 @@
-package study.spring.practice;
+package study.spring.user;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler;
 import org.springframework.stereotype.Component;
-import study.spring.practice.domain.MyUserDetails;
-import study.spring.practice.repository.UserRepository;
+import study.spring.user.domain.MyUserDetails;
+import study.spring.user.repository.UserRepository;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
